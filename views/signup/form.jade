@@ -1,0 +1,22 @@
+doctype html
+html
+	include ../parts/headtag.jade
+	body
+		main.wrapper
+			include ../parts/navtag.jade
+			section.container
+				h3.title Sign Up
+				form(action='',method='post')
+					fieldset
+						label(for='username') Your Name
+						input(type='text', name='username', value!=username)
+						p(style="color:red;")!=error_username
+						label(for='password') Password
+						input(type='password', name='password', value!=password)
+						p(style="color:red;")!=error_password
+						label(for='password_a') Password Confirmation
+						input(type='password', name='password_a', value!=password_a)
+						p(style="color:red;")!=error_password_a
+						input.button-primary(type='submit',value='Signup')
+			include ../parts/footertag.jade
+

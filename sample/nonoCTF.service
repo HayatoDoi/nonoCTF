@@ -1,0 +1,11 @@
+[Unit]
+Description=CTF server
+After=network.target
+
+[Service]
+Type=simple  
+Restart = always
+ExecStart=/path/to/file
+
+[Install]
+WantedBy=multi-user.target

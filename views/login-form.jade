@@ -1,0 +1,18 @@
+doctype html
+html
+	include parts/headtag.jade
+	body
+		main.wrapper
+			include parts/navtag.jade
+			section.container
+				h3.title login
+				form(action='',method='post')
+					fieldset
+						label(for='username') Username
+						input(type='text', name='username')
+						label(for='password') Password
+						input(type='password', name='password')
+						p(style="color:red;")!=error
+						input.button-primary(type='submit',value='Login')
+			include parts/footertag.jade
+

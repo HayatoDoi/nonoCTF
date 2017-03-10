@@ -1,0 +1,30 @@
+// head(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#')
+head
+	meta(charset='utf-8')
+	meta(name='viewport',content='width=device-width, initial-scale=1')
+	meta(name='author', content='ノノノノ')
+	meta(name='keywords', content='CTF,jeopardy,nonoCTF,Capture the Flag')
+	meta(name='description', content='CTF site')
+
+	//- OGP
+	meta(property='og:title', content!=title)
+	meta(property='og:type', content='website')
+	meta(property='og:url', content='www.nononono.net')
+	meta(property='og:image', content='https://avatars0.githubusercontent.com/u/15780027?v=3&u=71a461d9e969f36e6c662be33ef15cc0a7d86cef&s=400')
+	meta(property='og:site_name', content='さいとねーむ')
+	meta(property='og:description', content='Nono\'s official site')
+	//- Twitter
+	meta(name='twitter:card', content='summary_large_image')
+	meta(name='twitter:site', content='@no_______nonono')
+	meta(name='twitter:creator', content='@no_______nonono')
+	// meta(name='twitter:title', content!=title)
+	// meta(name='twitter:description', content='Nono\'s official site')
+	// meta(name='twitter:image', content='https://avatars0.githubusercontent.com/u/15780027?v=3&u=71a461d9e969f36e6c662be33ef15cc0a7d86cef&s=400')
+	
+
+	title!=title
+	link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic')
+	link(rel='stylesheet', href='//cdn.rawgit.com/necolas/normalize.css/master/normalize.css')
+	link(rel='stylesheet', href='//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css')
+	link(rel='stylesheet', href='//milligram.github.io/styles/main.css')
+	link(rel='stylesheet', href='/assets/css/custom.css')

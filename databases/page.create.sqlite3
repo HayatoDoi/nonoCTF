@@ -1,0 +1,53 @@
+/* == dbの設計 == */
+
+/* Server_status */
+	/* release 公開設定 TorF */
+	/* release_time 非公開の場合 公開時間 */
+CREATE TABLE Server_status(
+	release TEXT NOT NULL,
+	release_time INTEGER
+);
+
+/* User_name */
+	/* id 主キー */
+	/* name 名前 */
+	/* admin 管理者 TorF */
+CREATE TABLE User_name (
+	id INTEGER NOT NULL PRIMARY KEY,
+	name TEXT NOT NULL,
+	admin TEXT DEFAULT 'F'
+);
+
+/* User_password */
+	/* id 主キー */
+	/* password パスワード */
+CREATE TABLE User_password (
+	id INTEGER NOT NULL PRIMARY KEY,
+	password TEXT NOT NULL
+);
+
+/* Question */
+	/* id 主キー */
+	/* score 得点 */
+	/* name 問題名 */
+	/* sentence 問題文 */
+	/* genre ジャンル(csv) */
+CREATE TABLE Question (
+	id INTEGER NOT NULL PRIMARY KEY,
+	score INTEGER NOT NULL,
+	name TEXT NOT NULL,
+	sentence TEXT DEFAULT NULL,
+	genre TEXT
+);
+
+/* Send_log */
+	/* id 主キー */
+	/* question_id 問題ID */
+	/* user_id ユーザID */
+	/* correct 正解 非正解 TorF */
+CREATE TABLE Send_log (
+	id INTEGER NOT NULL PRIMARY KEY,
+	question_id INTEGER NOT NULL,
+	user_id INTEGER NOT NULL,
+	correct TEXT DEFAULT 'F'
+);

@@ -1,0 +1,33 @@
+{
+  "name": "LookME",
+  "version": "1.0.0",
+  "description": "===",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleanDB": "echo CleanDB && rm databases/lookme.sqlite3 && sh ./createDB.sh ./databases/lookme.sqlite3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikaidoumari/blog.git"
+  },
+  "author": "Hayato Doi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nikaidoumari/blog/issues"
+  },
+  "homepage": "https://github.com/nikaidoumari/blog#readme",
+  "devDependencies": {
+    "body-parser": "^1.16.1",
+    "date-utils": "^1.2.21",
+    "express": "^4.14.1",
+    "express-session": "^1.15.1",
+    "html-to-text": "^3.1.0",
+    "jade": "^1.11.0",
+    "moment": "^2.17.1",
+    "node-markdown": "^0.1.1",
+    "sanitizer": "^0.1.3",
+    "sqlite3": "^3.1.8"
+  }
+}

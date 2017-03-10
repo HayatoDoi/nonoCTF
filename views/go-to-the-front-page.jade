@@ -1,0 +1,11 @@
+doctype html
+html
+	include parts/headtag.jade
+	body
+		main.wrapper
+			include parts/navtag.jade
+			section.container
+				h3.title!=title
+				a(href="/") Go to the front page→
+			include parts/footertag.jade
+

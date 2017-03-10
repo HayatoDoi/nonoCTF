@@ -1,0 +1,17 @@
+doctype html
+html
+	include parts/headtag.jade
+	body
+		main.wrapper
+			include parts/navtag.jade
+			section.container
+				h3.title admin
+				form(action='',method='post')
+					fieldset
+						label(for='title') タイトル
+						input(type='text', name='title', required)
+						label(for='text') 本文
+						textarea(id='text', name='text', style='rows="100";height:300px;', required)
+						input.button-primary(type='submit',value='Send')
+			include parts/footertag.jade
+
